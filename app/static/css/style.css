@@ -1,0 +1,20 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666666;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    background-image: url('../image/login-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+* {
+    color: #fff;
+}

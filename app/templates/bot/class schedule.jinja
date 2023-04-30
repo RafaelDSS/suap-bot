@@ -1,0 +1,7 @@
+{% for day_index, day in enumerate(['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta']) -%}
+    <b>{{- day }}</b>:
+    {% for hour_index in range(6) -%}
+        <b>{{- class_schedule[hour_index][0] -}}:
+        </b>{{ class_schedule[hour_index][day_index+1] | default('<i>Sem aula nesse horário</i>', true) }}
+    {% endfor %}
+{% endfor %}

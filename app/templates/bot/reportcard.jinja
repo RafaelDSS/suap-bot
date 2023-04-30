@@ -1,0 +1,9 @@
+{% for reportcard in reportcards %}
+<b>{{ reportcard.disciplina }}</b>
+    ⌛ Carga Horária: <b>{{ reportcard.carga_horaria }}</b>
+    ⏳ Carga horária cumprida: <b>{{ reportcard.carga_horaria_cumprida }} Aulas</b>
+    {{ "✅" if reportcard.situacao == "Aprovado" else "❌"}} Situação: <b>{{ reportcard.situacao }}</b>
+    📝 Faltas: <b>{{ reportcard.numero_faltas }}</b>
+    🗓 Frequência: <b>{{ reportcard.percentual_carga_horaria_frequentada }}%</b>
+    📊 Média final: <b>{{ reportcard.media_final_disciplina  }}</b>
+{% endfor %}

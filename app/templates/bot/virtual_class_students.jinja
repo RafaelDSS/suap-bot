@@ -1,0 +1,7 @@
+{% set nome_disciplina = virtual_class.componente_curricular.rsplit(" -", 1)[0] %}
+<b>Alunos</b> - {{ nome_disciplina }}
+
+{% for participante in virtual_class.participantes %}
+<b>{{ participante.nome }}</b>
+{{ participante.matricula }}
+{% endfor %}

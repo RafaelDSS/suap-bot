@@ -1,0 +1,6 @@
+{% set nome_disciplina = virtual_class.componente_curricular.rsplit(" -", 1)[0] %}
+<b>Aulas Ministradas</b> - {{ nome_disciplina }}
+
+{% for index, aula in enumerate(virtual_class.aulas) -%}
+    <b>{{ index+1 }}</b> - {{ aula.conteudo }}
+{% endfor %}

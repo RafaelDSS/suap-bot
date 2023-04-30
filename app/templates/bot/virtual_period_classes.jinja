@@ -1,0 +1,6 @@
+{% set nome_disciplina = virtual_class.componente_curricular.rsplit(" -", 1)[0] %}
+<b>Aulas</b> - {{ nome_disciplina }}
+
+{% for virtual_class in virtual_period_classes -%}
+    *{{ virtual_class.descricao }}* {{ virtual_class.horarios_de_aula }}
+{% endfor %}

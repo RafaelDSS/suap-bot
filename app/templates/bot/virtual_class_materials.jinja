@@ -1,0 +1,6 @@
+{% set nome_disciplina = virtual_class.componente_curricular.rsplit(" -", 1)[0] %}
+<b>Materiais de Aula</b> - {{ nome_disciplina }}
+
+{% for material in virtual_class.materiais_de_aula -%}
+    <a href="https://suap.ifba.edu.br/{{ material.url }}">{{ material.descricao }}</a>
+{% endfor %}

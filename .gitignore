@@ -1,0 +1,12 @@
+__pycache__
+*/__pycache__
+.venv
+*.db
+.vscode
+.idea
+migrations
+logs
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+supervisord.pid
