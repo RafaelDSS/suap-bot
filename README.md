@@ -6,8 +6,13 @@ Um Bot de Telegram feito em python que consome a api do SUAP.
 
 ## Como executar o projeto
 
+Rode o ngrok em uma aba separada
 ```
-flask run
+ngrok http 5000
+```
+Sete o webhook do Telegram
+```
+flask set-telegram-webhook
 ```
 
 Celery beat:
@@ -26,6 +31,12 @@ Run Flower:
 
 ```
 celery -A wsgi.celery flower
+```
+
+Rode a aplicação
+
+```
+flask run
 ```
 
 
