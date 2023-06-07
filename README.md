@@ -27,3 +27,7 @@ Run Flower:
 ```
 celery -A wsgi.celery flower
 ```
+
+
+### Screenshots
+[![image-2023-06-07-18-55-53.png](https://i.postimg.cc/wTxB4qnR/image-2023-06-07-18-55-53.png)](https://postimg.cc/V5T1d8fz)
